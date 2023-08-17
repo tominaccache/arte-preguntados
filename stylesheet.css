@@ -156,6 +156,42 @@ select {
 }
 
 
+.respuesta{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.respuesta h1{
+margin-bottom: 2%;
+text-transform: uppercase;
+font-family: "Mikado";
+letter-spacing:7px;
+font-size:xx-large;
+}
+.respuesta img{
+    width: 35%;
+}
+.respuesta a{
+    margin-top: 4%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Mikado";
+    font-size: xx-large;
+}
+
+.respuesta a:hover{
+    border-radius: 8px;
+    background-color: rgb(212, 150, 236);
+    border: solid 5px  rgb(123, 42, 155);
+    margin-top: 4%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Mikado";
+    font-size: xx-large;
+}
 
 /* FOOTER */
 footer {
@@ -168,3 +204,4 @@ footer div {
     height: 50%;
     background-color: black;
 }
+
