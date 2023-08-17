@@ -10,47 +10,54 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="logo.gif" alt="error al cargar la página">
+            <img class="logo" src="imgs/logo.gif" alt="error al cargar la página">
            <ul>
                  <li><a href="ConfigurarJuego.html">Jugar</a></li>
            </ul>
         </nav>
     </header>
+    <main>
+        <img src="imgs/configuracion.png" alt="">
 
-    <form action="pregunta.html" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" required><br><br>
+        <form action="pregunta.html" method="POST">
+            <div class="form__label">
+                <label for="nombre">Nombre</label>
+                <input type="text" autocomplete="off" name="nombre" required>
+            </div>
+            
+            <div>
+                
+                <select id="floatingSelectGrid" aria-label="Elegir dificultad">
+                    <option selected>Dificultad:</option>
+                    <option value="1">Facil</option>
+                    <option value="2">Medio</option>
+                    <option value="3">Dificil</option>
+                    <option value="-1">Todos</option>
+                </select>
+            </div>
+            <div>
+                <select id="floatingSelectGrid" aria-label="Elegir dificultad">
+                    <option selected>Categoria:</option>
+                    <option value="1">Deporte</option>
+                    <option value="2">Cine</option>
+                    <option value="3">Musica</option>
+                    <option value="4">Ciencia</option>
+                    <option value="5">Arte</option>
+                    <option value="-1">Todas</option>
+                </select>
+            </div>
+        
+            <div class="form__div-submit">
+                <input class="submit" id="comenzar" type="submit" value="Comenzar">
+                <input class="submit" id="rehacer" type="reset" value="Rehacer">
+            </div>
+          </form>
+    </main>
+    <footer>
+        <div>
+            
+        </div>
+    </footer>
 
-    
-        <label for="dificultad">Dificultad:</label><br>
-
-        <input type="radio"  name="dificultad" value="facil" required>
-        <label for="facil">Fácil</label><br>
-        <input type="radio"  name="dificultad" value="medio" required>
-        <label for="medio">Medio</label><br>
-        <input type="radio"  name="dificultad" value="dificil" required>
-        <label for="dificil">Difícil</label><br><br>
-    
-        <label for="categoria">Categoría:</label><br>
-        <input type="radio" name="categoria" value="deporte" required>
-        <label for="deporte">Deporte</label><br>
-        <input type="radio"  name="categoria" value="Cine" required>
-        <label for="Cine">Cine</label><br>
-        <input type="radio" name="categoria" value="Música" required>
-        <label for="Música">Música</label><br>
-        <input type="radio" name="categoria" value="Ciencia" required>
-        <label for="Ciencia">Ciencia</label><br>
-        <input type="radio" name="categoria" value="Arte" required>
-        <label for="Arte">Arte</label><br><br>
-    
-        <input type="submit" value="Comenzar">
-        <input type="reset" value="Rehacer">
-      </form>
-</body>
-</html>
-
-
-
- 
 </body>
 </html>

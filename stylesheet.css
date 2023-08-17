@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(212, 150, 236);
+    font-family: "Mikado";
 }
 
 @font-face {
@@ -35,7 +36,6 @@ ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-family: "Mikado";
     font-size: 1.3em;
 }
 
@@ -56,11 +56,16 @@ ul li:hover {
 
 
 /* MAIN */
-.index{
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 6%;
+    padding-top: 3rem;
+}
+
+.index img {
+    width: 80%;
+    height: auto;
 }
 
 .index__button-play {
@@ -73,4 +78,93 @@ ul li:hover {
 .index__button-play:hover{
     background-color: rgb(91, 61, 95);
     border: solid 5px  rgb(133, 95, 138);
+}
+
+form {
+    padding-top: 3rem;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin: .5rem 0;
+}
+
+.form__label, select {
+    display: flex;
+    flex-direction: column;
+    width: 22em;
+}
+
+select {
+    height: 2rem;
+    width: 44.8rem;
+}
+
+.form__label input {
+    height: 2rem;
+    width:100%;
+    padding-left: .5rem;
+}
+
+
+.form__div-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    font-family: "Mikado";
+    background-color: transparent;
+    padding: .5rem 5rem;
+    border-radius: 0;
+    border: solid 5px  transparent;
+    transition: border-radius 1s, background-color .5s;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    margin: 0 2px;
+}
+
+.submit:hover{
+    border-radius: 8px;
+    background-color: transparent;
+    border: solid 5px transparent;
+    transition: border-radius 1s, background-color .8s, border .5s;
+}
+
+#comenzar {
+    background-color: rgb(52, 221, 150);
+    color: rgb(27, 97, 68);
+}
+
+#comenzar:hover {
+    background-color: rgb(52, 221, 150);
+    border: solid 5px  rgb(27, 97, 68);
+}
+
+#rehacer {
+    background-color: rgb(221, 52, 52);
+    color:rgb(66, 20, 20);
+}
+
+#rehacer:hover {
+    background-color: rgb(221, 52, 52);
+    border: solid 5px  rgb(151, 23, 23);
+
+}
+
+
+
+/* FOOTER */
+footer {
+    height: 10em;
+}
+
+footer div {
+    top: 50%;
+    position: relative;
+    height: 50%;
+    background-color: black;
 }
