@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(212, 150, 236);
+}
+
+@font-face {
+    font-family: 'Mikado';
+    src: url("fonts/MikadoBold_DEMO.otf");
+}
 
 .logo {
     width: 3.75%;
@@ -15,17 +23,35 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 
-nav ul{
+ul{
     list-style-type: none;
 }
 
-nav ul li a{
-text-decoration: none;
-color: rgb(0, 0, 0);
-text-transform: uppercase;
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Mikado";
+    font-size: 1.3em;
+}
+
+ul li {
+    background-color: rgb(139, 57, 172);
+    padding: .5rem 5rem;
+    border-radius: 0;
+    border: solid 5px  transparent;
+    transition: border-radius 1s, background-color .5s;
+}
+
+ul li:hover {
+    border-radius: 8px;
+    background-color: rgb(184, 74, 228);
+    border: solid 5px  rgb(139, 57, 172);
+    transition: border-radius 1s, background-color .8s, border .5s;
 }
 
 
@@ -36,18 +62,15 @@ text-transform: uppercase;
     flex-direction: column;
     padding-top: 6%;
 }
-.imgPrincipal{
-    padding: 1%;
-    border: 3px solid #000;
+
+.index__button-play {
+    margin-top: 5px;
+    background-color: rgb(133, 95, 138);
+    padding: 1rem 10rem;
+    font-size: 1.8em;
 }
 
-.buttonplay{
-    margin-top: 3%;
-    background-color: red;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size:x-large;
-    border-radius: 5px;
+.index__button-play:hover{
+    background-color: rgb(91, 61, 95);
+    border: solid 5px  rgb(133, 95, 138);
 }
