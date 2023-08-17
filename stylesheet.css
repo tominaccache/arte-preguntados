@@ -11,6 +11,17 @@ body {
 @font-face {
     font-family: 'Mikado';
     src: url("fonts/MikadoBold_DEMO.otf");
+
+}
+
+@font-face {
+    font-family: "Magdelin-Medium";
+    src: url("fonts/magdelin_fonts/Magdelin-Medium.otf");
+}
+
+@font-face {
+    font-family: "Magdelin";
+    src: url("fonts/magdelin_fonts/Magdelin-ExtraBold.otf");
 }
 
 .logo {
@@ -53,6 +64,11 @@ ul li:hover {
     transition: border-radius 1s, background-color .8s, border .5s;
 }
 
+input[type=radio]{
+    height: 3rem;
+    border-radius: 0;
+}
+
 
 /* MAIN */
 main {
@@ -61,6 +77,20 @@ main {
     flex-direction: column;
     padding-top: 3rem;
 }
+
+.pregunta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: "Magdelin";
+}
+
+.pregunta img {
+    width: 80%;
+}
+
 
 .index img {
     width: 80%;
@@ -78,6 +108,13 @@ main {
     background-color: rgb(91, 61, 95);
     border: solid 5px  rgb(133, 95, 138);
 }
+
+span {
+    text-align: justify;
+}
+
+
+/* FORM */
 
 form {
     padding-top: 3rem;
@@ -113,6 +150,15 @@ select {
     justify-content: center;
 }
 
+
+.form__answer {
+    display: flex;
+    align-items: center;
+    font-family: "Magdelin";
+}
+
+
+/* SUBMIT BUTTON */
 .submit {
     font-family: "Mikado";
     background-color: transparent;
@@ -154,6 +200,18 @@ select {
 
 }
 
+#enviar-respuesta {
+    background-color: rgb(52, 221, 150);
+    color: #000;
+    font-size: large;
+    margin-top: 3rem;
+    padding-right: 5rem 10rem;
+}
+
+#enviar-respuesta:hover {
+    background-color: rgb(52, 221, 150);
+    border: solid 5px  rgb(27, 97, 68);
+}
 
 
 /* FOOTER */
