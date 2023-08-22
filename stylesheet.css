@@ -99,12 +99,12 @@ main {
 
 
 .index img {
-    width: 80%;
+    width: 60%;
     height: auto;
 }
 
 .index__button-play {
-    margin-top: 5px;
+    margin-top: 7%;
     background-color: rgb(133, 95, 138);
     padding: 1rem 10rem;
     font-size: 1.8em;
@@ -117,16 +117,19 @@ main {
 
 span {
     text-align: justify;
+    margin-top: 2%;
+    padding: 3%;
 }
 
 
 /* FORM */
 
 form {
-    padding-top: 3rem;
+
     font-size: 2em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 form div {
@@ -159,6 +162,7 @@ select {
 
 .form__answer {
     display: flex;
+    align-items: center;
     align-items: center;
     font-family: "Magdelin";
 }
@@ -219,43 +223,9 @@ select {
     border: solid 5px  rgb(27, 97, 68);
 }
 
-.respuesta{
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.enform{
+    width: 100px;
 }
-.respuesta h1{
-margin-bottom: 2%;
-text-transform: uppercase;
-font-family: "Mikado";
-letter-spacing:7px;
-font-size:xx-large;
-}
-.respuesta img{
-    width: 35%;
-}
-.respuesta a{
-    margin-top: 4%;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Mikado";
-    font-size: xx-large;
-}
-
-.respuesta a:hover{
-    border-radius: 8px;
-    background-color: rgb(212, 150, 236);
-    border: solid 5px  rgb(123, 42, 155);
-    margin-top: 4%;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Mikado";
-    font-size: xx-large;
-}
-
 /* FOOTER */
 footer {
     height: 10em;
