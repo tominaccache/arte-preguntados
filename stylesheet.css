@@ -168,6 +168,13 @@ option {
 display: flex;
 align-items: center;
 font-family: "Magdelin";
+flex-direction: column;
+}
+
+.form__answer div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 form div {
@@ -202,9 +209,7 @@ form div {
     transition: border-radius 1s, background-color .8s, border .5s;
 }
 
-.submitgeneral {
 
-}
 #comenzar {
     background-color: rgb(52, 221, 150);
     color: rgb(27, 97, 68);
@@ -232,6 +237,7 @@ form div {
     font-size: large;
     margin-top: 3rem;
     padding-right: 5rem 10rem;
+    grid-column: 1 / -1;
 }
 
 #enviar-respuesta:hover {
@@ -241,7 +247,6 @@ form div {
 
 .enform{
     width: 250px;
-    height: 250px;
 }
 /* FOOTER */
 footer {
