@@ -350,18 +350,46 @@ text-transform: uppercase;
 margin: 2%;
 }
 
+.debajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.debajo a{color: #ffffff;
-    background-color: rgb(96, 50, 114);
-    letter-spacing: 0.6px;
-    word-spacing: 3px;
-    font-size: larger;
-    font-family: 'Mikado';
-    text-transform: uppercase;
-    text-decoration-line: none;
-     display:flex ;     
-    margin-bottom: 4%; }
-    .debajo a:hover{  background-color: rgb(130, 32, 169);}
-    .debajo img{
-        width: 100%;
-    }
+.debajo a{
+    color: #ffffff;
+}
+
+.debajo a:hover{ 
+    background-color: rgb(130, 32, 169);
+}
+
+.debajo img{
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    object-position: 10% 100%; 
+}
+
+
+.section-creditos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5em;
+}
+
+.section-creditos__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-creditos__card ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-creditos__card img {
+    max-width: 310px;
+    height: auto;
+}
