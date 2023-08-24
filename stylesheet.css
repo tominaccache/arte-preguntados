@@ -252,3 +252,18 @@ footer div img {
 
 
 
+.rta{    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;}
+.rta a{
+    font-family: "Mikado";
+    background-color: transparent;
+    padding: .5rem 5rem;
+    border-radius: 0;
+    border: solid 5px  transparent;
+    transition: border-radius 1s, background-color .5s;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 20px;
+}
