@@ -127,9 +127,7 @@ span {
 form {
 
     font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 form div {
