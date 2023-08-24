@@ -73,6 +73,7 @@ ul li:hover {
 input[type=radio]{
     height: 3rem;
     border-radius: 0;
+    margin-right: 5px;
 }
 
 
