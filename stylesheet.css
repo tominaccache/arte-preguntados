@@ -127,43 +127,58 @@ span {
 form {
 
     font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; /* Agregué un espacio entre las columnas */
+}
 
+.form-configuracion {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+margin: .5rem 0;
+}
+
+.form__label, select {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    height: auto;
+    width: -webkit-fill-available;
+    font-family: "Magdelin";
+    padding: 5px 0 0 5px;
+    font-size: 2rem;
+}
+
+option {
+    font-size: 1.5rem;
+}
+
+.form__label input {
+    font-family: "Magdelin";
+    font-size: 1.5rem;
+    padding: 5px 0 5px .5rem;
+}
+
+.form__answer {
+display: flex;
+align-items: center;
+font-family: "Magdelin";
 }
 
 form div {
     margin: .5rem 0;
 }
 
-.form__label, select {
-    display: flex;
-    flex-direction: column;
-    width: 22em;
-}
-
-select {
-    height: 2rem;
-    width: 44.8rem;
-}
-
-.form__label input {
-    height: 2rem;
-    width:100%;
-    padding-left: .5rem;
-}
-
-
 .form__div-submit {
     display: flex;
     justify-content: center;
 }
 
-
-.form__answer {
-    display: flex;
-    align-items: center;
-    align-items: center;
-    font-family: "Magdelin";
-}
 
 
 /* SUBMIT BUTTON */
@@ -178,7 +193,6 @@ select {
     text-transform: uppercase;
     font-size: 2.25rem;
     margin: 0 2px;
-        
 }
 
 .submit:hover{
@@ -187,7 +201,10 @@ select {
     border: solid 5px transparent;
     transition: border-radius 1s, background-color .8s, border .5s;
 }
-.submitgeneral{}
+
+.submitgeneral {
+
+}
 #comenzar {
     background-color: rgb(52, 221, 150);
     color: rgb(27, 97, 68);
@@ -229,6 +246,7 @@ select {
 /* FOOTER */
 footer {
     background-color: black;
+    margin-top: 50px;
 }
 
 footer img {
