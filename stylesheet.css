@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
 body {
     background-color: rgb(212, 150, 236);
     font-family: "Mikado";
@@ -23,6 +28,21 @@ body {
     font-family: "Magdelin";
     src: url("fonts/magdelin_fonts/Magdelin-ExtraBold.otf");
 }
+
+ol {
+    font-family: "Magdelin";
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  ol li {
+    padding: 0 15px;
+  }
 
 .logo {
     width: 3.75%;
@@ -73,6 +93,7 @@ ul li:hover {
 input[type=radio]{
     height: 3rem;
     border-radius: 0;
+    margin-right: 5px;
 }
 
 
@@ -91,6 +112,7 @@ main {
     align-items: center;
     font-size: 2.5rem;
     font-family: "Magdelin";
+    margin-top: 0;
 }
 
 .pregunta img {
@@ -129,7 +151,7 @@ form {
     font-size: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; /* Agregué un espacio entre las columnas */
+    grid-gap: 20px 90px; /* Agregué un espacio entre las columnas */
 }
 
 .form-configuracion {
@@ -235,8 +257,6 @@ form div {
     background-color: rgb(52, 221, 150);
     color: #000;
     font-size: large;
-    margin-top: 3rem;
-    padding-right: 5rem 10rem;
     grid-column: 1 / -1;
 }
 
@@ -249,6 +269,11 @@ form div {
     width: 250px;
 }
 
+<<<<<<< HEAD
+=======
+/* RESPUESTA CORRECTA */ 
+
+>>>>>>> ab9e29f074cb681c409ca1ce7100878ab70c97c5
 
 /* FOOTER */
 footer {
@@ -259,6 +284,11 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top:100%;
+    height: 100px;
 }
 
 footer img {
@@ -267,13 +297,6 @@ footer img {
 
 footer div {
     margin-top: 20px;
-    top: 50%;
-    position: relative;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
 
 footer div img {
@@ -283,18 +306,45 @@ footer div img {
           drop-shadow(-1px -1px 0 white);
 }
 
-.rta{    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;}
-.rta a{
+.respuesta-correcta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+} 
+
+.respuesta-correcta img {
+    max-width: 500px;
+}
+
+.respuesta-correcta h2 {
+    font-size: 3rem;
     font-family: "Mikado";
-    background-color: transparent;
-    padding: .5rem 5rem;
+}
+
+.respuesta-correcta h3 {
+    font-size: 2rem;
+}
+
+.menu-continuar {    
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu-continuar a{
+    font-family: "Mikado";
     border-radius: 0;
     border: solid 5px  transparent;
     transition: border-radius 1s, background-color .5s;
     color: #fff;
     text-transform: uppercase;
     font-size: 2rem;
+<<<<<<< HEAD
     margin: 20px;
 }
+=======
+}
+>>>>>>> ab9e29f074cb681c409ca1ce7100878ab70c97c5
