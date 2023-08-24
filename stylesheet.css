@@ -122,69 +122,74 @@ span {
 }
 
 
+/* FORM */
+
 form {
+
     font-size: 2em;
-    display: grid;
+        display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; /* Agregué un espacio entre las columnas */
-  }
-  
-  form div {
+
+}
+
+form div {
     margin: .5rem 0;
-  }
-  
-  .form__label,
-  select {
+}
+
+.form__label, select {
     display: flex;
     flex-direction: column;
     width: 22em;
-  }
-  
-  select {
+}
+
+select {
     height: 2rem;
-    width: 22em;
-  }
-  
-  .form__label input {
+    width: 44.8rem;
+}
+
+.form__label input {
     height: 2rem;
-    width: 100%;
+    width:100%;
     padding-left: .5rem;
-  }
-  
-  .form__div-submit {
+}
+
+
+.form__div-submit {
     display: flex;
     justify-content: center;
-    grid-column: 1/3; 
-    margin-top: 20px; 
-  }
-  
-  .form__answer {
+}
+
+
+.form__answer {
     display: flex;
     align-items: center;
+    align-items: center;
     font-family: "Magdelin";
-  }
-  
-  /* SUBMIT BUTTON */
-  .submit {
+}
+
+
+/* SUBMIT BUTTON */
+.submit {
     font-family: "Mikado";
     background-color: transparent;
     padding: .5rem 5rem;
     border-radius: 0;
-    border: solid 5px transparent;
+    border: solid 5px  transparent;
     transition: border-radius 1s, background-color .5s;
     color: #fff;
     text-transform: uppercase;
     font-size: 2.25rem;
     margin: 0 2px;
-  }
-  
-  .submit:hover {
+        
+}
+
+.submit:hover{
     border-radius: 8px;
     background-color: transparent;
     border: solid 5px transparent;
     transition: border-radius 1s, background-color .8s, border .5s;
-  }
-
+}
+.submitgeneral{}
 #comenzar {
     background-color: rgb(52, 221, 150);
     color: rgb(27, 97, 68);
