@@ -228,15 +228,27 @@ select {
 }
 /* FOOTER */
 footer {
-    height: 10em;
+    background-color: black;
+}
+
+footer img {
+    max-width: 100px;
 }
 
 footer div {
     top: 50%;
     position: relative;
     height: 50%;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
+
+footer div img {
+    padding: 5px;
+}
+
 
 
 
